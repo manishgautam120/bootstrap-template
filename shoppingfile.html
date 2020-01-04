@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.exzoom.css">
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="javascript/jquery.exzoom.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="fontawesome/css/pro.min.css.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>Sandon Storage Bed </h1>
+        </div>
+    </div>
+ 
+</div>
+
+ <div class="container">
+  <div class="row">
+     <div class="col-lg-7">
+        <div class="exzoom" id="exzoom">
+            <!-- Images -->
+            <div class="exzoom_img_box">
+              <ul class='exzoom_img_ul'>
+                <li><img src="images/01.jpg"/></li>
+                <li><img src="images/02.jpg"/></li>
+                <li><img src="images/03.jpg"/></li>
+                <li><img src="images/04.jpg"/></li>
+                <li><img src="images/05.jpg"/></li>
+                <li><img src="images/01.jpg"/></li>
+                <li><img src="images/02.jpg"/></li>
+                <li><img src="images/03.jpg"/></li>
+                <li><img src="images/04.jpg"/></li>
+                <li><img src="images/05.jpg"/></li>
+              </ul>
+            </div>
+                <!-- <a href="https://www.jqueryscript.net/tags.php?/Thumbnail/">Thumbnail</a> Nav-->
+                                   <!-- Nav Buttons -->
+                <div class="exzoom_nav">
+               
+               <p class="exzoom_btn">
+                <a href="javascript:void(0);" class="exzoom_prev_btn"> < </a>
+                <a href="javascript:void(0);" class="exzoom_next_btn"> > </a>
+               </p>
+            </div> 
+     </div>
+     </div>
+      <div class="col-lg-5">
+            <div class="row">
+                <div class="col-lg-12 text-right">   
+                    <span><i class="far fa-heart colororanged pr-1"></i></span>
+                     <span class="addtocartclass pr-2"><a href="">Add to Wishlist</a></span>
+          
+                     <span class="vl"></span>           
+                     <span><i class="far fa-heart pl-2 colororanged pr-1"></i></span>
+                     <span class="addtocartclass"><a href="">Add to Compare</a></span>
+        
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">   
+                <div class="mt-2 textdecorationforlink text-dark colorfromstyle" href="">FINISH</div> 
+                 <div class="">
+                     <input id="outercolororanged1" type="submit" value="Walnut">
+                 </div>
+
+                 <div class="mt-2 textdecorationforlink text-dark colorfromstyle" href="">BED SIZE</div> 
+                 <div class="">
+                     <input id="outercolororanged2" type="submit" value="Walnut">
+                     <input id="outercolororanged3" type="submit" value="Walnut">
+                 </div>
+                 <div class="mt-2 textdecorationforlink text-dark colorfromstyle" href="">STORAGE SIZE</div> 
+                 <div class="">
+                     <input id="outercolororanged4" type="submit" value="Walnut">
+                   
+                 </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mt-3">   
+                     <span style="font-size: 24px; font-weight: bold;" > ₹ </span><span style="font-size: 22px; font-weight: bold;"">19,899</span>
+                </div>
+            </div>
+           
+            <div class="row">
+                <div class="col-lg-12 mt-3">   
+                     <span style="font-size: 24px; font-weight: bold;" > ₹ </span><span style="font-size: 22px; font-weight: bold;"">19,899</span>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var becolornormal = {
+    border: "none"
+}
+
+let becolororanged = {
+ 
+  border: "2px solid orangered"
+ 
+}
+
+
+$(document).ready(function(){
+$("#outercolororanged1").click(function(){
+   $("#outercolororanged1").css(becolororanged);
+   $("#outercolororanged2").css(becolornormal);
+   $("#outercolororanged3").css(becolornormal);
+   $("#outercolororanged4").css(becolornormal);
+});
+
+$("#outercolororanged2").click(function(){
+ $("#outercolororanged1").css(becolornormal);
+ $("#outercolororanged3").css(becolornormal);
+ $("#outercolororanged2").css(becolororanged);
+ $("#outercolororanged4").css(becolornormal);
+});
+
+$("#outercolororanged3").click(function(){
+ $("#outercolororanged1").css(becolornormal);
+ $("#outercolororanged2").css(becolornormal);
+ $("#outercolororanged3").css(becolororanged);
+ $("#outercolororanged4").css(becolornormal);
+});
+$("#outercolororanged4").click(function(){
+ $("#outercolororanged1").css(becolornormal);
+ $("#outercolororanged2").css(becolornormal);
+ $("#outercolororanged3").css(becolornormal);
+ $("#outercolororanged4").css(becolororanged);
+});
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+   </div>
+ </div>
+ 
+
+
+<script type = "text/javascript">
+$(document).ready(function(){
+ $(function(){
+$("#exzoom").exzoom({
+"autoPlay":false
+});
+
+});
+});
+</script>
+  
+  
+</body>
+</html>

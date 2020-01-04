@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Fill in details about your used bed to calculate your discount.
+  </h3>
+  <div class="columns medium-1">
+  <button aria-label="Close" class="close-reveal-modal close-btn icofont-cross"></button>
+  </div>
+  </div>
+  <div class="modal-body row">
+  <form action="/exchange-requests" id="buy-with-exchange" method="POST" novalidate="novalidate">
+  <input type="hidden" name="pincode" id="pincode" value="" class="pincode">
+  <input type="hidden" name="sku" id="sku" value="" class="sku">
+  <div class="step step-1 current-step">
+  <div class="step-info row">
+  <div class="step-count columns medium-2">Step <span class="current-step-number">1</span> / 3</div>
+  </div>
+  <div class="questionnaire row"><fieldset><span class="field-name required">Size</span>
+  <div class="options-info">
+  <div class="options clearfix">
+  <div class="option"><input id="size_king" name="response[size]" required="required" type="radio" value="king">
+  <div><label class="option-text" for="size_king">King</label> <label class="option-desc" for="size_king">(6.5 ft x 6 ft approx)</label></div>
+  </div>
+  <div class="option"><input id="size_queen" name="response[size]" type="radio" value="queen">
+  <div><label class="option-text" for="size_queen">Queen</label> <label class="option-desc" for="size_queen">(6.5 ft x 5 ft approx)</label></div>
+  </div>
+  <div class="option"><input id="size_single" name="response[size]" type="radio" value="single">
+  <div><label class="option-text" for="size_single">Single</label> <label class="option-desc" for="size_single">(6 ft x 3 ft approx)</label></div>
+  </div>
+  </div>
+  <p class="options-how-to">* Measure only the area that your mattress fits into.</p>
+  </div>
+  </fieldset><fieldset><span class="field-name required">Material</span>
+  <div class="options-info">
+  <div class="options clearfix">
+  <div class="option"><input id="material_teak" name="response[material]" required="required" type="radio" value="teak"> <label class="option-text" for="material_teak">Teak</label></div>
+  <div class="option"><input id="material_sheesham" name="response[material]" type="radio" value="sheesham"> <label class="option-text" for="material_sheesham">Sheesham</label></div>
+  <div class="option"><input id="material_solid_wood" name="response[material]" type="radio" value="other_solid_wood"> <label class="option-text" for="material_solid_wood">Other Solid Wood</label></div>
+  <div class="option"><input id="material_mdf" name="response[material]" type="radio" value="mdf_or_particle_board"> <label class="option-text" for="material_mdf">MDF/Particle Board</label></div>
+  <div class="option"><input id="material_metal" name="response[material]" type="radio" value="metal"> <label class="option-text" for="material_metal">Metal</label></div>
+  </div>
+  <p class="options-how-to">* Mention the material of the frame, not the mattress board (most mattress boards are made of plywood).</p>
+  </div>
+  </fieldset><fieldset><span class="field-name required">Storage</span>
+  <div class="options-info">
+  <div class="options clearfix">
+  <div class="option"><input id="with_storage" name="response[has_storage]" required="required" type="radio" value="true"> <label class="option-text" for="with_storage">With Storage</label></div>
+  <div class="option"><input id="without_storage" name="response[has_storage]" type="radio" value="false"> <label class="option-text" for="without_storage">Without Storage</label></div>
+  </div>
+  </div>
+  </fieldset><fieldset><span class="field-name required">Mattress</span>
+  <div id="has_mattress" class="options-info">
+  <div class="options clearfix">
+  <div class="option"><input id="mattress_none" name="response[mattress_type]" required="required" type="radio" value="none"> <label class="option-text" for="mattress_none">Not selling mattress</label></div>
+  <div class="option"><input id="mattress_cotton" name="response[mattress_type]" type="radio" value="cotton"> <label class="option-text" for="mattress_cotton">Cotton</label></div>
+  <div class="option"><input id="mattress_coir_or_foam" name="response[mattress_type]" type="radio" value="coir_or_foam"> <label class="option-text" for="mattress_coir_or_foam">Coir / Foam</label></div>
+  <div class="option"><input id="mattress_spring" name="response[mattress_type]" type="radio" value="spring"> <label class="option-text" for="mattress_spring">Spring</label></div>
+  </div>
+  <p class="options-how-to">* You can only include a mattress that fits the bed you are exchanging.</p>
+  </div>
+  </fieldset><fieldset><span class="field-name required">Mattress Condition</span>
+  <div id="has_mattress" class="options-info">
+  <div class="options clearfix">
+  <div class="option"><input id="mattress_na" name="response[mattress_condition]" required="required" type="radio" value="none"> <label class="option-text" for="mattress_na">Not Applicable</label></div>
+  <div class="option"><input id="mattress_good" name="response[mattress_condition]" type="radio" value="good"> <label class="option-text" for="mattress_good">Good</label></div>
+  <div class="option"><input id="mattress_damaged" name="response[mattress_condition]" type="radio" value="damaged"> <label class="option-text" for="mattress_damaged">Damaged</label></div>
+  </div>
+  <p class="options-how-to">* Please select not applicable if the mattress is not included</p>
+  </div>
+  </fieldset>
+  <div class="step-cta clearfix">
+  <p class="validation-error-message">&nbsp;</p>
+  <button class="go-to-next-step action-button" type="button"> Next </button></div>
+  </div>
+  </div>
+  <div class="step step-2">
+  <div class="step-info row">
+  <div class="step-count columns medium-2"><span class="icofont icofont-back_arrow go-back">&nbsp;</span> Step <span class="current-step-number">2</span> / 3</div>
+  </div>
+  <div class="questionnaire row"><fieldset><span class="field-name required">Condition</span>
+  <div class="options-info">
+  <div class="options clearfix">
+  <div class="option option-large"><input id="condition_like_new" name="response[condition]" required="required" type="radio" value="like_new"> <label class="option-text" for="condition_like_new">Like New </label></div>
+  <div class="option option-large"><input id="condition_gently_used" name="response[condition]" type="radio" value="gently_used">
+  <div><label class="option-text" for="condition_gently_used">Gently Used </label> <label class="option-desc" for="condition_gently_used">(scratches, peeling paint etc.,)</label></div>
+  </div>
+  <div class="option option-large"><input id="condition_some_damage" name="response[condition]" type="radio" value="some_damage">
+  <div><label class="option-text" for="condition_some_damage">Some Damage</label> <label class="option-desc" for="condition_some_damage">(broken, missing parts etc.,)</label></div>
+  </div>
+  </div>
+  <div class="reference-images-list">
+  <div class="defect-reference-images">&nbsp;</div>
+  <div class="defect-reference-images"><img class="reference-image" src="https://www.ulcdn.net/media/exchange/damages/minor/minor-damage.jpg?1503124409" alt=""></div>
+  <div class="defect-reference-images"><img class="reference-image" src="https://www.ulcdn.net/media/exchange/damages/major/major-damage.jpg?1503124482" alt=""></div>
+  </div>
+  </div>
+  </fieldset>
+  <div class="step-cta clearfix">
+  <p class="validation-error-message">&nbsp;</p>
+  <button class="calculate-discount action-button" type="button"> Calculate Discount </button></div>
+  </div>
+  </div>
+  <div class="step step-3">
+  <div class="step-info row">
+  <div class="step-count columns medium-2">
+  <span class="icofont icofont-back_arrow go-back">&nbsp;</span> Step <span class="current-step-number">3</span> / 3</div>
+  </div>
+  <div class="questionnaire">
+  <span class="field-name"> Note: </span>
+  <div class="terms-of-agreement">
+  <div class="terms">Within 48 hours from the time you place your order, our exchange partners, Zefo, will conduct a physical inspection of your used bed. Your order will be confirmed only if your bed matches the details provided. Kindly ensure you provide accurate information.</div>
+  <div class="tnc-input-wrapper">
+  <label class="tnc-text"><input id="tnc" name="tnc" required="required" type="checkbox" value="agree"> I agree to the </label><a class="tnc-link" href="../../buy-with-exchange" target="_blank">Terms and Conditions</a>
+  </div>
+  </div>
+  </div>
+  <p class="validation-error-message">&nbsp;</p>
+  </div>
+  </form>
+  </div>
+  <div class="modal-footer row">
+  <div class="discount-detail row">
+  <p class="columns medium-6 help-text">
+
+
+    Need help filling these details? 
+  <a target="_blank" class="help-link" href="/buy-with-exchange?src=buy_with_exchange_popup#guide">Read through this section</a>
+  </p>
+  <div class="columns medium-3 total-discount">
+  <span class="title">Total Discount:</span>
+  <span class="value">--</span>
+  </div>
+  </div>
+
+</body>
+</html>
